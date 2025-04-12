@@ -1,3 +1,5 @@
 import { INote } from '../interfaces/note.interface';
 
-export const storage: INote[] = [];
+export const storage = {
+  notes: [] as INote[],
+};
