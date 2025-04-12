@@ -11,7 +11,5 @@ export interface IHttpErrorResponse {
 export interface IHttpSuccessResponse {
   status: boolean;
   message: string;
-  token?: string;
-  data?: any;
-  paginate?: any;
+  data: any;
 }
