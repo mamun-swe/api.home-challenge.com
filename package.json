@@ -1,0 +1,54 @@
+{
+  "name": "api.home-challenge.com",
+  "version": "1.0.0",
+  "description": "A simple API using Node.js and TypeScript for CRUD operations. Following Layered architecture.",
+  "main": "server.ts",
+  "scripts": {
+    "clean": "rimraf build/*",
+    "build": "npm run clean && npx tsc",
+    "start": "node build/server.js",
+    "postinstall": "tsc",
+    "watch-node": "nodemon build/server.js",
+    "watch-ts": "tsc -w",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q build/server.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mamun-swe/api.home-challenge.com.git"
+  },
+  "keywords": [
+    "API",
+    "TypeScript",
+    "Node.js",
+    "CRUD"
+  ],
+  "author": "Abdullah Al Mamun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mamun-swe/api.home-challenge.com/issues"
+  },
+  "homepage": "https://github.com/mamun-swe/api.home-challenge.com#readme",
+  "dependencies": {
+    "async-validator": "^4.2.5",
+    "body-parser": "^2.2.0",
+    "compression": "^1.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.5",
+    "@types/compression": "^1.7.5",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/morgan": "^1.9.9",
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
