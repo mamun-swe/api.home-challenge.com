@@ -53,8 +53,7 @@ This application is set up to run easily inside a Docker container using shell s
 
 ### Start the Application inside Docker container
 From the project's root directory, run:
-    ```bash 
-    ./run.sh
+```./run.sh```
 The application will be accessible at http://localhost:4000/<PORT>.
 
 ### Stop the Application inside Docker container
