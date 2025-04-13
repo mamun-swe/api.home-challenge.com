@@ -5,6 +5,7 @@ import {
   HttpStatusCode,
   HttpSuccessResponse,
 } from '../utilities/exceptions';
+import { logger } from '../config/logger.config';
 
 // Retrive list of all resources
 export const index = async (
@@ -22,6 +23,7 @@ export const index = async (
       }),
     );
   } catch (error: any) {
+    logger.error(error);
     next(error);
   }
 };
@@ -44,6 +46,7 @@ export const store = async (
       }),
     );
   } catch (error: any) {
+    logger.error(error);
     next(error);
   }
 };
@@ -66,6 +69,7 @@ export const show = async (
       }),
     );
   } catch (error: any) {
+    logger.error(error);
     next(error);
   }
 };
@@ -98,6 +102,7 @@ export const update = async (
       }),
     );
   } catch (error: any) {
+    logger.error(error);
     next(error);
   }
 };
@@ -119,6 +124,7 @@ export const destroy = async (
       }),
     );
   } catch (error: any) {
+    logger.error(error);
     next(error);
   }
 };

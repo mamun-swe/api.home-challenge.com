@@ -1,6 +1,5 @@
 import express, { Express, NextFunction, Response, Request } from 'express';
 import cors from 'cors';
-import path from 'path';
 import morgan from 'morgan';
 import helmet from 'helmet';
 import dotenv from 'dotenv';
@@ -8,10 +7,8 @@ import bodyParser from 'body-parser';
 import compression from 'compression';
 dotenv.config();
 import { routes } from './routes';
-// import { HttpCode } from './helpers';
-// import { publicRouter, privateRouter } from './routers';
-// import { apiKeyVerification } from './middlewares/api-key.middleware';
-// import { AppErrorHandeller } from './middlewares/error-handeller.middleware';
+import { AppExceptionHandeller } from './middlewares/exception-handeller.middleware';
+import { HttpStatusCode } from './utilities/exceptions';
 
 export const app: Express = express();
 
@@ -29,3 +26,14 @@ app.get('/', (req: Request, res: Response, next: NextFunction) => {
 
 // Serve application routes
 app.use('/', routes);
+
+// Handle 404
+app.use((req: Request, res: Response, next: NextFunction) => {
+  res.status(HttpStatusCode.NOT_FOUND).json({
+    status: false,
+    errors: [{ field: 'server', message: 'Sorry, Route not found.' }],
+  });
+});
+
+// Global exception handeller
+app.use(AppExceptionHandeller);

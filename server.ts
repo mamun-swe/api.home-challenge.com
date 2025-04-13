@@ -24,8 +24,6 @@ const port: any = process.env.APPLICATION_PORT || 5000;
 //   });
 // }
 
- app.listen(port, () => {
-   console.log(`Backend service is running at http://localhost:${port}`);
- });
-
-
+app.listen(port, () => {
+  console.log(`Backend service is running at http://localhost:${port}`);
+});

@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  backend:
+    build: .
+    image: backend-image
+    container_name: backend-container
+    ports:
+      - 4000:${APPLICATION_PORT}
+    environment:
+      - APPLICATION_PORT=${APPLICATION_PORT}
+
+    networks:
+      - backend-network
+
+networks:
+  backend-network:
+    name: backend-network
+    driver: bridge
