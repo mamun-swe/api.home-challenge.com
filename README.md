@@ -12,17 +12,17 @@ Initially, the application is accessible at http://localhost:4000 (HOST)
 - [DELETE] http://localhost:4000/notes/:id (to delete a note)
 
 ## Prerequisites
-    1. **Node.js** (v20 or higher recommended)
-    2. **npm** (comes with Node.js)
-    3. [Optional] **Docker** (if you’d like to run the application inside a container)
+1. **Node.js** (v20 or higher recommended)
+2. **npm** (comes with Node.js)
+3. [Optional] **Docker** (if you’d like to run the application inside a container)
 
 ## Getting Started
 
 ### 1. Clone the Repository
-    ```bash
-    git https://github.com/mamun-swe/api.home-challenge.com
-    cd api.home-challenge.com
-    ```
+```bash
+git https://github.com/mamun-swe/api.home-challenge.com
+cd api.home-challenge.com
+```
 
 ### Setup Environment Variables
 Create a .env file in application root directory and copy APPLICATION_PORT from .env.example and paste it to .env
