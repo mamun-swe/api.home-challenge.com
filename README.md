@@ -21,43 +21,48 @@ Initially, the application is accessible at http://localhost:4000 (HOST)
 ### 1. Clone the Repository
 ```bash
 git https://github.com/mamun-swe/api.home-challenge.com
+```
+```bash
 cd api.home-challenge.com
 ```
 
 ### Setup Environment Variables
-Create a .env file in application root directory and copy APPLICATION_PORT from .env.example and paste it to .env
+Create a .env file in application root directory and copy APPLICATION_PORT from .env.example and paste it to .env file.
 
 ### Install Dependencies
-    ```bash
-    npm install
-    ```
+```bash
+npm install
+```
 
 ### Build the Application
-    ```bash
-    npm run build
-    ```
+```bash
+npm run build
+```
 
 ### Run the Application
-    ```bash
-    npm start
-    ```
+```bash
+npm start
+```
 
 ## Running with Docker
 This application is set up to run easily inside a Docker container using shell scripts. Before you begin, grant execute permissions to both run.sh and down.sh. Full instructions are provided below.
 
 ### Grant Execute Permissions
-    ```bash
-    chmod +x ./run.sh
-    chmod +x ./down.sh
-    ```
+```bash
+chmod +x ./run.sh
+chmod +x ./down.sh
+```
 
 ### Start the Application inside Docker container
 From the project's root directory, run:
-```./run.sh```
+```bash
+./run.sh
+```
+
 The application will be accessible at http://localhost:4000/<PORT>.
 
 ### Stop the Application inside Docker container
 From the project's root directory, run:
-    ```bash 
-    ./down.sh
-    ```
+```bash 
+./down.sh
+```
