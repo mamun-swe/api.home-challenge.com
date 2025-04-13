@@ -3,13 +3,13 @@
 This is a basic CRUD REST API built with TypeScript and Node.js. It stores data in memory, follows a layered architecture, and is fully automated using Docker. You can perform the standard CREATE, READ, UPDATE, and DELETE actions for a simple “Notes” application.
 
 ## Below is a list of accessible API endpoints:
-    Initially, the application is accessible at http://localhost:4000 (HOST)
+Initially, the application is accessible at http://localhost:4000 (HOST)
 
-    - [POST] http://localhost:4000/notes (to create a new note)
-    - [GET] http://localhost:4000/notes (to retrieve all notes)
-    - [GET] http://localhost:4000/notes/:id (to retrieve a specific note by ID)
-    - [PUT] http://localhost:4000/notes/:id (to update a note)
-    - [DELETE] http://localhost:4000/notes/:id (to delete a note)
+- [POST] http://localhost:4000/notes (to create a new note)
+- [GET] http://localhost:4000/notes (to retrieve all notes)
+- [GET] http://localhost:4000/notes/:id (to retrieve a specific note by ID)
+- [PUT] http://localhost:4000/notes/:id (to update a note)
+- [DELETE] http://localhost:4000/notes/:id (to delete a note)
 
 ## Prerequisites
     1. **Node.js** (v20 or higher recommended)
