@@ -1,5 +1,5 @@
 {
-  "name": "api.home-challenge.com",
+  "name": "api.notesapp.com",
   "version": "1.0.0",
   "description": "A simple API using Node.js and TypeScript for CRUD operations. Following Layered architecture.",
   "main": "server.ts",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mamun-swe/api.home-challenge.com.git"
+    "url": "git+https://github.com/mamun-swe/api.notesapp.com.git"
   },
   "keywords": [
     "API",
@@ -26,9 +26,9 @@
   "author": "Abdullah Al Mamun",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mamun-swe/api.home-challenge.com/issues"
+    "url": "https://github.com/mamun-swe/api.notesapp.com/issues"
   },
-  "homepage": "https://github.com/mamun-swe/api.home-challenge.com#readme",
+  "homepage": "https://github.com/mamun-swe/api.notesapp.com#readme",
   "dependencies": {
     "async-validator": "^4.2.5",
     "body-parser": "^2.2.0",

@@ -1,4 +1,4 @@
-# api.home-challenge.com
+# api.notesapp.com
 
 This is a basic CRUD REST API built with TypeScript and Node.js. It stores data in memory, follows a layered architecture, and is fully automated using Docker. You can perform the standard CREATE, READ, UPDATE, and DELETE actions for a simple “Notes” application.
 
@@ -20,10 +20,10 @@ Initially, the application is accessible at http://localhost:4000 (HOST)
 
 ### 1. Clone the Repository
 ```bash
-git https://github.com/mamun-swe/api.home-challenge.com
+git https://github.com/mamun-swe/api.notesapp.com
 ```
 ```bash
-cd api.home-challenge.com
+cd api.notesapp.com
 ```
 
 ### Setup Environment Variables
