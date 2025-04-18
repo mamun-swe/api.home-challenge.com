@@ -23,7 +23,7 @@ Initially, the application is accessible at http://localhost:4000 (HOST)
 ### 1. Clone the Repository
 
 ```bash
-git https://github.com/mamun-swe/api.notesapp.com
+git clone https://github.com/mamun-swe/api.notesapp.com
 ```
 
 ```bash
